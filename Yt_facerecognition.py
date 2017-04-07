@@ -123,7 +123,7 @@ class App(object):
                 cv2.rectangle(imgout, (x0,y0),(x1,y1),(0,255,0),2)
                 # Draw the predicted name (folder name...):
                 draw_str(imgout, x0-20, y0-20, self.model.subject_names[prediction])
-            cv2.imshow('videofacerec', imgout)
+            cv2.imshow('Yt_facerec_v2', imgout)
             # Show image & exit on escape:
             ch = cv2.waitKey(10)
             if ch == 27:
